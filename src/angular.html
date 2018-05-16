@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<h3>ANGULAR</h3>
+<div ng-app="">
+    <p>Name: <input type="text" ng-model="name"></p>
+
+    <p>
+        print input field using ng-bind :
+        <span ng-bind="name"></span>
+    </p>
+
+    <div ng-init="firstName='Hello world '"></div>
+    <span ng-bind="firstName"></span>
+
+    <span>Sum of 5 and 5 = {{ 5+5 }}</span>
+
+    <p>
+        print input field using angular expression:
+        <span>{{name}}</span>
+    </p>
+</div>
+
+</body>
+</html>
